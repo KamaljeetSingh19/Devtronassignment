@@ -58,18 +58,15 @@ body {
 
 
 
-/* For screens smaller than 1200px */
+
 @media (max-width: 1200px) {
   .logo {
     font-size: 20px; 
     margin-left: 5vw; 
-  }
-
-  
-
+  } 
 }
 
-/* For screens smaller than 768px */
+
 @media (max-width: 768px) {
 
   .header {
@@ -96,6 +93,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .header {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
 
 
 
@@ -140,9 +149,7 @@ body {
   height: auto;
 }
 
-/* Media Queries for Responsiveness */
 
-/* For screens smaller than 1200px */
 @media (max-width: 1200px) {
   .content {
     padding: 40px 60px;
@@ -162,7 +169,7 @@ body {
   }
 }
 
-/* For screens smaller than 768px */
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -189,6 +196,35 @@ body {
 
   .cicd-boxnew img {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .content {
+    flex-direction: column;
+    padding: 20px; 
+  }
+
+  .left-section {
+    max-width: 90vw; 
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .left-section h1 {
+    font-size: 36px; 
+    margin-left: 0;
+    text-align: center; 
+  }
+
+  .left-section p {
+    font-size: 16px; 
+    margin-left: 0;
+    text-align: center; 
+  }
+
+  .cicd-boxnew img {
+    width: 100%; 
   }
 }
 
@@ -293,6 +329,30 @@ body {
   }
 }
 
+
+@media only screen and (max-width: 479px) {
+  .dev {
+    font-size: 24px; 
+    padding: 10px;
+  }
+
+  .dev p {
+    font-size: 28px; 
+  }
+
+  .partners {
+    padding-top: 20px;
+    padding-bottom: 50px; 
+  }
+
+  .partners .logos {
+    gap: 10vw; 
+  }
+
+  .partners img {
+    max-height: 20px; 
+  }
+}
 
 
 /* Sectionpage */ 
@@ -467,7 +527,7 @@ h2 {
 
 
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
   .container {
     padding: 10px;
@@ -557,6 +617,69 @@ h2 {
 }
 
 
+@media only screen and (max-width: 479px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 28px; 
+    margin-bottom: 40px; 
+  }
+
+  .layout {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .sidebar {
+    width: 100%; 
+    margin-right: 0; 
+    padding: 0;
+    font-size: 16px; 
+  }
+
+  .sidebar::before {
+    left: 5px; 
+    top: 26px; 
+    height: calc(100% - 53px); 
+  }
+
+  .sidebar ul li {
+    padding: 18px 20px;
+    font-size: 18px;
+  }
+
+  .circle {
+    left: 1px;
+    top: 23px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .pipeline-section {
+    margin-bottom: 20px; 
+  }
+
+  .pipeline-section .cards {
+    margin-right: 15px;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+  }
+
+  .card {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px; 
+    padding: 18px; 
+    text-align: left;
+  }
+
+  .policy-container {
+    width: 100%; 
+  }
+}
+
 
 /* ICONS AND TEXT */ 
 
@@ -601,7 +724,7 @@ h2 {
   word-wrap: break-word; 
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) { 
   .icon-row {
     flex-direction: row; 
@@ -636,6 +759,37 @@ h2 {
 
   .icon-container p {
     font-size: 14px; 
+  }
+}
+
+
+@media only screen and (max-width: 479px) {
+  .icons-section {
+    padding: 10px;
+    margin-top: 40px; 
+  }
+
+  .icon-row {
+    display: grid;
+    grid-template-columns: auto auto; 
+    width: 85%; 
+    margin-bottom: 20px; 
+  }
+
+  .icon-container {
+    margin: 10px 0; 
+    width: 150px; 
+  }
+
+  .icon {
+    margin-left: 10px;
+    width: 50px; 
+    height: 50px;
+  }
+
+  .icon-container p {
+    font-size: 18px; 
+    line-height: 1.2; 
   }
 }
 
@@ -731,7 +885,7 @@ blockquote {
   color: #000000 !important;
 }
 
-/* Media Queries for 1920px */
+
 @media (min-width: 1920px) {
   .testimonial-header {
     max-width: 1200px; 
@@ -753,7 +907,7 @@ blockquote {
 
 
 
-/* Media Queries for 1200px screens */
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .testimonial-header {
     max-width: 1100px; 
@@ -779,7 +933,7 @@ blockquote {
   }
 }
 
-/* Media Queries for 768px screens */
+
 @media (max-width: 768px) {
   .testimonial-header {
     flex-wrap: wrap;
@@ -816,6 +970,73 @@ blockquote {
 
   .testimonial-text {
     text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 479px) {
+  .testimonial-header {
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 20px auto; 
+    padding: 0 10px; 
+  }
+
+  .testimonial-header h2 {
+    font-size: 40px; 
+    margin-bottom: 10px; 
+  }
+
+  .testimonial-count {
+    font-size: 40px; 
+  }
+
+  .testimonial-nav{
+    margin-left: 30vw;
+    gap: 5px;
+  }
+
+  .nav-button {
+    font-size: 17px; 
+    padding: 4px 8px; 
+  }
+
+  .testimonial-section {
+    width: 100%; 
+    box-shadow: none; 
+  }
+
+  .testimonial-container {
+    height: auto; 
+    
+  }
+
+  .testimonial {
+    flex-direction: row; 
+    text-align: center;
+  }
+
+  .testimonial-image {
+   
+    margin: 0 auto 10px auto; 
+  }
+
+ .testimonial-author{
+  text-align: left;
+ }
+
+  .testimonial-text {
+    padding: 0 10px; 
+  }
+
+  blockquote {
+    font-size: 18px; 
+    padding-right: 0; 
+    line-height: 1.4; 
+  }
+
+  .testimonial-author {
+    font-size: 12px; 
   }
 }
 
@@ -924,7 +1145,7 @@ blockquote {
   padding-right: 2rem; 
 }
 
-/* Media Queries for 1920px */
+
 @media (min-width: 1920px) {
   .demo-section {
     padding: 6rem 18rem; 
@@ -964,7 +1185,7 @@ blockquote {
 }
 
 
-/* Media Queries for 1200px */
+
 @media (max-width: 1200px) {
   .demo-section {
     flex-direction: row; 
@@ -1043,11 +1264,48 @@ blockquote {
     text-align: left;
     color: #989DAD;
     margin-left: 0.5rem; 
-  }
-
-  
+  }  
 }
 
+@media only screen and (max-width: 479px) {
+  .demo-section {
+    padding: 2rem 1rem; 
+    margin-top: 2rem; 
+  }
+
+  .text-section {
+    margin-left: 50px; 
+  }
+
+  .text-section h1 {
+    font-size: 1.6rem; 
+  }
+
+  .text-section p {
+    font-size: 1.2rem; 
+  }
+
+  .form-section {
+    padding: 1rem; 
+    margin: 1rem 0; 
+  }
+
+  .form-section h2 {
+    font-size: 1.4rem; 
+  }
+
+  .form-section label {
+    font-size: 0.875rem; 
+  }
+
+  .form-section input,
+  .form-section select {
+    font-size: 1rem; 
+    padding: 0.75rem; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* Adjusted button styles */
 .demo-button5 {
