@@ -1453,3 +1453,28 @@ blockquote {
   background-size: var(--s) calc(var(--s) * 0.577);
 }
 
+.footer {
+  background-color: #07111a; /* Dark background color */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center the text */
+  margin-top: 25px;
+  padding: 20px 0; /* Add padding for spacing */
+  position: relative; /* Ensure it stays at the bottom if needed */
+  bottom: -80px;
+  width: 100%; /* Full width */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 1.1rem; /* Adjust font size as needed */
+}
+
+.footer-name {
+  color: #ffffff; /* Initial color of the name */
+  text-decoration: none; /* Remove underline from the link */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-name:hover {
+  color: #15b573; /* Change color on hover */
+}
