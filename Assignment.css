@@ -1454,14 +1454,15 @@ blockquote {
 }
 
 .footer {
-  background-color: #07111a; /* Dark background color */
-  color: #ffffff; /* White text color */
-  text-align: center; /* Center the text */
+  background-color: #13132d;
+  color: #ffffff;
+  text-align: center;
   margin-top: 25px;
-  padding: 20px 0; /* Add padding for spacing */
-  position: relative; /* Ensure it stays at the bottom if needed */
+  padding: 20px 0;
+  position: relative;
   bottom: -80px;
-  width: 100%; /* Full width */
+  right: 21px;
+  width: 1903px;
 }
 
 .footer p {
